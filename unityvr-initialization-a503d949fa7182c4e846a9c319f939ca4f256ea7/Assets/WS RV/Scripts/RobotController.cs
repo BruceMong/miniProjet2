@@ -31,9 +31,6 @@ public class RobotController : MonoBehaviour
         if (!ray.enabled)
             return;
 
-        // Ajouter la condition si Trigger est pressé
-        if (false)
-        {
             if (trigger.action.IsPressed())
             {
                 RaycastHit hit;
@@ -51,7 +48,6 @@ public class RobotController : MonoBehaviour
                 ray.enabled = false;
             }
 
-        }
         else if (cancel.action.IsPressed())
         {
             ray.enabled = false;
