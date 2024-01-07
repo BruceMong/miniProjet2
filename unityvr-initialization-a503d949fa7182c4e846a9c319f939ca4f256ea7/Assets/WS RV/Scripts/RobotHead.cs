@@ -23,8 +23,8 @@ public class RobotHead : MonoBehaviour
 
     void Update()
     {
-        if(head.transform.parent != null)
-            TryReattachHead();
+       // if (head.transform.parent != null) ;
+            //TryReattachHead();
 
     }
 
