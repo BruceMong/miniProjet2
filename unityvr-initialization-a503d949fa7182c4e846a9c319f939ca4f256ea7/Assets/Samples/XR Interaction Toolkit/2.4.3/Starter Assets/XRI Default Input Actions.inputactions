@@ -946,6 +946,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Delete Move",
+                    "type": "Button",
+                    "id": "2a72359f-bc73-49df-9ef5-5087b9bcbd65",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1034,6 +1043,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Snap Turn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dd40f295-216f-4b63-8850-fffea69755d5",
+                    "path": "<XRController>{LeftHand}/triggerButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Delete Move",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -1646,15 +1666,6 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Grab Move",
-                    "type": "Button",
-                    "id": "cfb29d37-3db0-4e5d-a73b-7d48a19e279e",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Snap Turn",
                     "type": "Value",
                     "id": "44441ad6-5762-466d-ad54-aa44fcd61a5c",
@@ -1662,6 +1673,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Lock Move",
+                    "type": "Button",
+                    "id": "83a83199-1e21-43c2-8e54-e39feb53644e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Rotate Move",
+                    "type": "Button",
+                    "id": "8e8557e0-c38d-43f6-a069-03caf483ab3f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1733,23 +1762,34 @@
                 },
                 {
                     "name": "",
-                    "id": "7ecb549e-ab98-4a4b-b979-38068fe3b811",
-                    "path": "<XRController>{RightHand}/gripPressed",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Generic XR Controller",
-                    "action": "Grab Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "31d838df-4d4e-4c16-a373-b9c07d9d2e2a",
                     "path": "<XRController>{RightHand}/Primary2DAxis",
                     "interactions": "Sector(directions=12,sweepBehavior=1),Sector(directions=2,sweepBehavior=2)",
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Snap Turn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4f5b2947-c9f0-49da-90ac-28f6ca61a01c",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Lock Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "04ae9ee1-08d8-42cf-91c9-b86382bef728",
+                    "path": "<XRController>{RightHand}/gripButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate Move",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -2225,15 +2265,6 @@
             "id": "8af2ee23-fd1a-4f8d-9f06-3c89e23c3655",
             "actions": [
                 {
-                    "name": "Activate",
-                    "type": "Button",
-                    "id": "faacc8c2-3a01-4d95-a69d-3c2fff15d487",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Select",
                     "type": "Button",
                     "id": "9cc3ed2c-de6e-4163-8a65-598f5dc369a6",
@@ -2255,28 +2286,6 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "4512a5ba-819b-4b45-bec2-b9820370ddda",
-                    "path": "<XRController>{RightHand}/thumbstickClicked",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Activate",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "b7d2cb79-c2e7-4988-b54e-f65ccbe5c8c5",
-                    "path": "<XRController>{RightHand}/secondaryButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Activate",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "8c93f47c-6288-4cd1-aefb-7c60221dba31",
                     "path": "<XRController>{RightHand}/primaryButton",
                     "interactions": "",
@@ -2294,6 +2303,45 @@
                     "processors": "",
                     "groups": "",
                     "action": "Touch Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Hand Menu",
+            "id": "0515a08e-5f96-40f0-abcf-a136037abc9c",
+            "actions": [
+                {
+                    "name": "Activate",
+                    "type": "Button",
+                    "id": "6e4e919d-319f-4366-9023-9aef66fe68c6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e7a247d2-36d1-45e8-8ec3-c3ac5a59cfa6",
+                    "path": "<XRController>{LeftHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Activate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "20e24d41-a381-4552-8ccd-b7dffd521ba4",
+                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Activate",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

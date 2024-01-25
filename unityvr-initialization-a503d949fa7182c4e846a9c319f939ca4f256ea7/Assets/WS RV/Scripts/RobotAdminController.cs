@@ -1,4 +1,4 @@
-using System;
+/* using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,7 +24,7 @@ public class RobotAdminController : MonoBehaviour
     void Start()
     {
         headRigidbody = head.GetComponent<Rigidbody>();
-        headRigidbody.isKinematic = true; // Empêche la tête de tomber immédiatement
+        headRigidbody.isKinematic = true; // Empï¿½che la tï¿½te de tomber immï¿½diatement
     }
 
     void Update()
@@ -45,9 +45,9 @@ public class RobotAdminController : MonoBehaviour
             Debug.Log(grabInteractable);
 
             fireController.ToggleFire();
-            head.transform.parent = null; // Détache la tête du corps
+            head.transform.parent = null; // Dï¿½tache la tï¿½te du corps
             headRigidbody.isKinematic = false; // Active la physique
-            headRigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse); // Ajoute une force pour faire sauter la tête
+            headRigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse); // Ajoute une force pour faire sauter la tï¿½te
             SetSpeed(0);
 
             //grabInteractable.enabled = true;
@@ -55,3 +55,4 @@ public class RobotAdminController : MonoBehaviour
         }
     }
 }
+*/
