@@ -1514,7 +1514,7 @@ MonoBehaviour:
   m_ConeCastAngle: 6
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 640
   m_RaycastTriggerInteraction: 1
   m_RaycastSnapVolumeInteraction: 1
   m_HitClosestOnly: 0
@@ -1525,7 +1525,7 @@ MonoBehaviour:
   m_EnableUIInteraction: 0
   m_BlockUIOnInteractableSelection: 0
   m_AllowAnchorControl: 1
-  m_UseForceGrab: 1
+  m_UseForceGrab: 0
   m_RotateSpeed: 180
   m_TranslateSpeed: 1
   m_AnchorRotateReferenceFrame: {fileID: 0}
@@ -1693,12 +1693,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!20 &506393313 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 7704827549224607527, guid: a91963d6cd7aca047826fd5e1cad15bd,
-    type: 3}
-  m_PrefabInstance: {fileID: 506393310}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &506393314 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7704827549310072517, guid: a91963d6cd7aca047826fd5e1cad15bd,
@@ -1723,11 +1717,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a0bcc8a6a50047408b6488278128034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  markerPrefab: {fileID: 2291345698479576404, guid: 13b0567430058ee4ebd417b1bd3688a9,
-    type: 3}
-  flyCam: {fileID: 506393313}
-  lastMarker: {fileID: 0}
-  markerHeight: 1
 --- !u!4 &516136907
 Transform:
   m_ObjectHideFlags: 0
@@ -4772,8 +4761,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74f375535aea7df428a9215658e60d62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vrCamera: {fileID: 6522633345427728002}
-  flyCam: {fileID: 506393313}
 --- !u!4 &1059716866
 Transform:
   m_ObjectHideFlags: 0
@@ -4802,12 +4789,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d943d97cc131c847aea09c8e70ffb4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  head: {fileID: 0}
-  jumpForce: 5
-  headRigidbody: {fileID: 0}
-  agentNavRobot: {fileID: 0}
-  fireController: {fileID: 0}
-  grabInteractable: {fileID: 0}
 --- !u!1 &1061034877 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5881067034175328352, guid: 812cdbf1f5d0dd048a257e2ab19221c8,
