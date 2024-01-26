@@ -1777,7 +1777,7 @@
                     "path": "<XRController>{RightHand}/secondaryButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Generic XR Controller",
                     "action": "Lock Move",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -1785,10 +1785,10 @@
                 {
                     "name": "",
                     "id": "04ae9ee1-08d8-42cf-91c9-b86382bef728",
-                    "path": "<XRController>{RightHand}/gripButton",
+                    "path": "<XRController>{RightHand}/gripPressed",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Generic XR Controller",
                     "action": "Rotate Move",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -2255,54 +2255,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Click",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Radial Menu",
-            "id": "8af2ee23-fd1a-4f8d-9f06-3c89e23c3655",
-            "actions": [
-                {
-                    "name": "Select",
-                    "type": "Button",
-                    "id": "9cc3ed2c-de6e-4163-8a65-598f5dc369a6",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Touch Position",
-                    "type": "Value",
-                    "id": "4f6448af-533c-439f-aae8-67bc734e7649",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "8c93f47c-6288-4cd1-aefb-7c60221dba31",
-                    "path": "<XRController>{RightHand}/primaryButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Select",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f5c3f34a-e9d0-4925-be5b-2e9fb189473c",
-                    "path": "<XRController>/primary2DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Touch Position",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

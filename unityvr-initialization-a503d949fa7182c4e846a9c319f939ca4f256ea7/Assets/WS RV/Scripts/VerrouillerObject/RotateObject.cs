@@ -1,3 +1,5 @@
+//VR qui fonctionne avec le casque
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
